@@ -21,6 +21,8 @@ section{
     max-width: 1300px;
     padding: 0 80px;
     margin: auto;
+    justify-content: center;
+    align-items: center;
 }
 .about, .achieve, .skills, .project, .contact, footer{
     font-family: 'Poppins', sans-serif;
@@ -210,8 +212,14 @@ section .title{
 }
 
 /* skills section  */
+.skills .skills-content{
+    display:flex;
+}
 .skills .skills-content .column{
-    width: calc(50% - 30px);
+    width: calc(100% - 30px);
+}
+.skills .skills-content .left{
+    padding-right: 15%;
 }
 .skills .skills-content .left .text{
     font-size: 30px;
@@ -241,6 +249,10 @@ section .title{
 }
 .skills .skills-content .right .bars{
     margin-bottom: 15px;
+    display: grid;
+    grid-template-columns: 2;
+    grid-template-rows: 3;
+   
 }
 .skills .skills-content .right .info{
     display: flex;
@@ -327,7 +339,6 @@ section .title{
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     display: inline-block;
-    font: normal normal normal 14px/1 FontAwesome;
     font-size: inherit;
     text-rendering: auto;
     color:white
@@ -427,19 +438,13 @@ section .title{
 footer{
     background: #111;
     padding: 15px 23px;
-    color: #fff;
     text-align: center;
 }
 footer span {
     color: rgb(107, 20, 220);
     text-decoration: none;
 }
-footer span :hover{
-    text-decoration: underline;
-}
 
-
-/* responsive media query start */
 
 @media (max-width: 991px) {
     .max-width{

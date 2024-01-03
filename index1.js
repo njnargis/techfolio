@@ -1,5 +1,3 @@
-
-
     // toggle menu/navbar script
     $('.menu-btn').click(function(){
         $('.navbar .menu').toggleClass("active");
@@ -13,6 +11,7 @@
         backSpeed: 60,
         loop: true
     });
+  
 
    
 
