@@ -71,10 +71,6 @@ section .title{
     font-size: 35px;
     font-weight: 600;
 }
-.navbar .logo a span{
-    color: rgb(107, 20, 220);
-    transition: all 0.3s ease;
-}
 
 .navbar .menu li{
     list-style: none;
@@ -89,9 +85,6 @@ section .title{
     transition: color 0.3s ease;
 }
 .navbar .menu li :hover{
-
-    border-radius: 100cqmax;
-    background-color:white;
     padding: 15px;
     color: #e9566a;
 }
@@ -103,6 +96,7 @@ section .title{
     font-size: 23px;
     cursor: pointer;
     display: none;
+    font-family: 'Poppins', sans-serif;
 }
 
 /* home section  */
@@ -159,7 +153,16 @@ section .title{
 
 /* about section  */
 
-
+.title2{
+    text-align: left;
+    font-size: 30px;
+    color:#fff;
+}
+.title3{
+    text-align: left;
+    font-size: 20px;
+    color:#fff;
+}
 .about .about-content {
     position: relative;
     padding-block: 40px;
@@ -170,9 +173,15 @@ section .title{
     font-weight: 600;
     margin-block: 30px;
     text-align: center;
+    margin-left: 5%;
 }
 
+.about .edu{
+    
+    color: rgb(107, 20, 220);
+    padding: 2%;
 
+}
 
 /* achievement section  */
 .achieve, .teams{
@@ -209,6 +218,7 @@ section .title{
     font-size: 25px;
     font-weight: 500;
     margin: 10px 0 7px 0;
+    text-decoration: underline;
 }
 
 /* skills section  */
@@ -266,7 +276,7 @@ section .title{
     font-size: 18px;
 }
 .skills .skills-content .right .line{
-    height: 10px;
+    height: 7px;
     width: 100%;
     background: lightgrey;
     position: relative;
@@ -279,20 +289,29 @@ section .title{
     top: 0;
     background: rgb(107, 20, 220);
 }
-.skills-content .right .html::before{
-    width: 90%;
+.skills-content .right .C::before{
+    width: 85%;
 }
-.skills-content .right .css::before{
+.skills-content .right .DSA::before{
     width: 75%;
 }
+.skills-content .right .JAVA::before{
+    width: 70%;
+}
+.skills-content .right .python::before{
+    width: 80%;
+}
+.skills-content .right .html_css::before{
+    width: 90%;
+}
 .skills-content .right .js::before{
-    width: 60%;
+    width: 70%;
 }
 .skills-content .right .php::before{
-    width: 50%;
+    width: 60%;
 }
 .skills-content .right .mysql::before{
-    width: 70%;
+    width: 65%;
 }
 
 /* project section  */
@@ -319,8 +338,12 @@ section .title{
 }
 .project .abc .card .text{
     font-size: 25px;
-    font-weight: 500;
+    font-weight: 700;
     margin: 10px 0 7px 0;
+    color: #fff;
+}
+.project .abc .card p{
+    color: #fff;
 }
 .project .abc .card img{
     height: 150px;
@@ -366,6 +389,12 @@ section .title{
 }
 .contact .contact-content .row .info{
     margin-left: 30px;
+}
+.contact .contact-content .row .info a:link{
+    color:#fff;
+}
+.contact .contact-content .row .info a:visited{
+    color:#fff;
 }
 .contact .contact-content .row i{
     font-size: 25px;
@@ -533,6 +562,7 @@ footer span {
 }
 
 @media (max-width: 500px) {
+    
     .home .home-content .text-2{
         font-size: 50px;
     }
