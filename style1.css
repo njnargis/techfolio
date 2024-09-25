@@ -183,6 +183,47 @@ section .title{
 
 }
 
+/* styles.css */
+
+/* Animation Styles */
+@keyframes floatInLeft {
+    0% {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes floatInRight {
+    0% {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  /* Hidden by default */
+  .about-content,
+  .title3 {
+    opacity: 0;
+    
+  }
+  
+  /* Animate when in view */
+  .about-content.visible {
+    animation: floatInLeft 2s ease-out forwards;
+  }
+  
+  .title3.visible {
+    animation: floatInRight 2s ease-out forwards;
+  }
+  
 /* achievement section  */
 .achieve, .teams{
     color:#fff;
